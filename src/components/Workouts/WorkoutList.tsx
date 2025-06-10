@@ -28,6 +28,7 @@ const WorkoutList: React.FC = () => {
       exercises: [
         {
           id: "1",
+          type: "run",
           name: "Warm-up Jog",
           description: "Easy jog to get the body moving",
           duration: 10,
@@ -35,6 +36,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "2",
+          type: "run",
           name: "Tempo Run",
           description: "Sustained hard effort at tempo pace",
           duration: 20,
@@ -42,6 +44,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "3",
+          type: "run",
           name: "Cool-down Jog",
           description: "Easy jog to recover and finish",
           duration: 10,
@@ -65,6 +68,7 @@ const WorkoutList: React.FC = () => {
       exercises: [
         {
           id: "1",
+          type: "run",
           name: "Warm-up",
           description: "Easy running to prepare for intervals",
           duration: 15,
@@ -72,6 +76,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "2",
+          type: "run",
           name: "800m Intervals",
           description: "Run 800m at 5K pace, repeat with rest",
           repetitions: 6,
@@ -80,6 +85,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "3",
+          type: "run",
           name: "Cool-down",
           description: "Easy running to recover",
           duration: 10,
@@ -102,6 +108,7 @@ const WorkoutList: React.FC = () => {
       exercises: [
         {
           id: "1",
+          type: "run",
           name: "Easy Run",
           description: "Relaxed, conversational pace",
           duration: 30,
@@ -123,6 +130,7 @@ const WorkoutList: React.FC = () => {
       exercises: [
         {
           id: "1",
+          type: "run",
           name: "Plank",
           description: "Hold plank position for core strength",
           duration: 60,
@@ -130,6 +138,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "2",
+          type: "run",
           name: "Russian Twists",
           description: "Twist torso side to side for core",
           repetitions: 20,
@@ -137,6 +146,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "3",
+          type: "run",
           name: "Single-leg Glute Bridge",
           description: "Bridge with one leg raised",
           repetitions: 15,
@@ -144,6 +154,7 @@ const WorkoutList: React.FC = () => {
         },
         {
           id: "4",
+          type: "run",
           name: "Dead Bug",
           description: "Core stability exercise",
           repetitions: 10,
@@ -266,7 +277,7 @@ const WorkoutList: React.FC = () => {
       <WorkoutModal
         open={showModal}
         onClose={() => setShowModal(false)}
-        onSave={(workout) => {
+        onSave={() => {
           // Here you would add the new workout to your data source
           setShowModal(false);
         }}
